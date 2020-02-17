@@ -1,6 +1,8 @@
 #!/usr/bin/perl -w
 
 use Bio::SearchIO;
+use File::Copy;
+use File::Copy::Recursive qw(dircopy);
 
 my $workpath = "/var/www/html/Gblast2/";
 my $term = $/;
@@ -13,11 +15,15 @@ my $cfile = $workpath . 'subcat';
 my $blst = $workpath . $email .'result/blast.out';
 $hitsout = $workpath . $email .'result/hits.out';
 
+chomp(my $curdir = `pwd`);
+chdir($workpath);
+
 our ($id, $sequence, $line, $qry_tms, $pfam_url);
 our %qhash=();
 our %shash=();
 our (@all_qry_hits, @all_qry, @all_subj, @sequencelines);
 
+copy($curdir . "/" . $qfile, $workpath . $qfile);
 open(QFASTA,"<",$qfile) or die("Open failed: $!");
 $/ = ">";
 
@@ -58,9 +64,8 @@ $/ = $term;
 print "DONE.\n";
 
 print "BLASTing...\n";
-# here $sfile = tcdb (as the formated DB) file # $qfile = query (sequence of interest) file # $blst = BLAST output file 
-system("blastall -p blastp -d $sfile -i $qfile -e $evalue -o $blst"); #-m 7 
-#system("blastall -p blastp -d $sfile -i $qfile -m 9 -B 3 -b 10 -e 0.00000000000000000001 -o $blst"); tabular result
+system("blastp -db $sfile -query $qfile -evalue $evalue -out $blst");
+
 print "Now parsing and stuff... (this might take a while)\n";
 # read blast output file
 my $blast_report = new Bio::SearchIO ('-format' => 'blast', '-file' => $workpath . $email . 'result/blast.out', -best_hit_only =>'true'); #-signif => '1e-5'
@@ -183,5 +188,8 @@ print "\n******* All Done! *******\n";
 print "The result is in: result/clean.tsv\n";
 print "blast.out is just the BLAST output\n";
 print "Sequences with 'No hits to TCDB' are saved in ",$no_hits,"\n";
+
+chdir($curdir);
+dircopy($workpath . $email .'result', $curdir . "/" . $email );
 
 exit 0;
