@@ -1,0 +1,70 @@
+Bootstrap: debootstrap
+OSVersion: stretch
+MirrorURL: http://ftp.ca.debian.org/debian/
+
+%files
+        Gblast2.tar.gz
+
+%environment
+export HMMTOP_ARCH=/var/www/html/Gblast2/hmmtop.arch
+export HMMTOP_PSV=/var/www/html/Gblast2/hmmtop.psv
+export PATH=/var/www/html/Gblast2:$PATH
+
+%post
+	export DEBIAN_FRONTEND=noninteractive
+	apt-get update
+	apt-get -qqq update
+	apt-get -qqq upgrade
+	
+	apt-get install -y curl apt-utils php
+	curl --silent -o apt.gpg https://packages.sury.org/php/apt.gpg
+	apt-get install -y ca-certificates lsb-release apt-transport-https dirmngr
+	apt-key add /apt.gpg
+	apt-get -qqq update
+	apt-get -qqq upgrade
+	
+	
+	apt-get install -y gnupg2 build-essential wget git perl libcurl4-openssl-dev libxml2-dev locales locales-all libexpat1-dev
+	ln -fs /usr/share/zoneinfo/America/New_York /etc/localtime
+	export LANGUAGE=en_US.UTF-8
+	export LANG=en_US.UTF-8
+	export LC_ALL=en_US.UTF-8
+	locale-gen en_US.UTF-8
+	dpkg-reconfigure locales
+	
+	echo | cpan
+	cpan File::Copy::Recursive
+	cpan Test::Needs
+	cpan List::MoreUtils
+	cpan URI
+	cpan IO::HTML
+	cpan IO::String
+	cpan HTTP::Headers
+	cpan HTML::Entities
+	cpan CGI
+	cpan XML::Parser
+	cpan XML::Parser::PerlSAX
+	cpan XML::DOM
+	cpan XML::DOM::XPath
+	cpan Data::Stag
+	cpan XML::Simple
+	cpan XML::Compile::SOAP11
+	cpan XML::Compile::WSDL11
+	cpan XML::Twig
+	cpan File::Which
+	cpan HTML::Template
+	cpan HTML::TreeBuilder
+	cpan JSON
+	cpan Log::Log4perl
+	cpan Math::CDF
+	cpan Bio::SearchIO
+
+	apt-get -y install alien
+	curl -s ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/2.2.26/ncbi-blast-2.2.26+-3.x86_64.rpm --output ncbi-blast-2.2.26+-3.x86_64.rpm
+	alien -i ncbi-blast-2.2.26+-3.x86_64.rpm
+	
+	tar -xzf Gblast2.tar.gz
+	mv Gblast2 /var/www/html/
+	mkdir -p /var/www/html/Gblast2/uploads/out/result
+	chmod 777 /var/www/html/Gblast2/uploads/out/result
+	rm -rf /var/lib/apt/lists/*

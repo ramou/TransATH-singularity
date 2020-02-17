@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+
+function _(el){
+	return document.getElementById(el);
+}
+function uploadFile(){
+	var file = _("file1").files[0];
+	// alert(file.name+" | "+file.size+" | "+file.type);
+	var formdata = new FormData();
+	formdata.append("file1", file);
+	formdata.append("evalue",document.getElementById('evalue').value);
+	formdata.append("percent",document.getElementById('percent').value);
+	formdata.append("user_name",document.getElementById('user_name').value);
+	var ajax = new XMLHttpRequest();
+	ajax.upload.addEventListener("progress", progressHandler, false);
+	ajax.addEventListener("load", completeHandler, false);
+	ajax.addEventListener("error", errorHandler, false);
+	ajax.addEventListener("abort", abortHandler, false);
+	ajax.open("POST", "actions.php");
+	ajax.send(formdata);
+
+}
+function progressHandler(event){
+	_("loaded_n_total").innerHTML = "Uploaded "+event.loaded+" bytes of "+event.total;
+	var percent = (event.loaded / event.total) * 100;
+	_("progressBar").value = Math.round(percent);
+	_("status").innerHTML = Math.round(percent)+"% uploaded and processing, do not close this browser window, please wait..";
+}
+function completeHandler(event){
+	_("status").innerHTML = event.target.responseText;
+	_("progressBar").value = 0;
+}
+function errorHandler(event){
+	_("status").innerHTML = "Upload Failed";
+}
+function abortHandler(event){
+	_("status").innerHTML = "Upload Aborted";
+}
+</script>
+<style type="text/css">
+
+                    body {
+                        font-family: verdana, sans-serif;
+                    }
+                    h2 {
+                        color: Navy;
+                        border-bottom: 2pt solid;
+                        width: 100%;
+   			margin-top: 30px;
+			margin-bottom: 20px;
+                    }
+                    div {
+                        text-align: right;
+                        color: steelblue;
+                        border-top: darkblue 1pt solid;
+                        margin-top: 6pt;
+                    }
+                    th {
+                        text-align: right;
+                        padding: 2pt;
+                        vertical-align: top;
+                    }
+                    td {
+                        padding: 6pt;
+                        vertical-align: top;
+                    }
+                    p {
+                       margin-bottom: 40px;
+  		       /*font-family: serif;*/ 
+    		       font-size: 110%	
+                    } 
+		    h4 {
+                       margin-bottom: 5px;
+  		       /*font-family: serif;*/ 
+    		       font-size: 70%	
+                    } 
+                
+
+</style>
+</head>
+<body bgcolor="MintCream">
+<center><h2>GBLAST2: Genome BLAST Transporter Prediction server</h2></center><p>GBLAST2 is an integrated program consists of sequence similiarity analysis (BLAST) and hidden Markov models (HMMs) to predict membrane transport proteins. It is an enhancement of G-BLAST program by Saier's lab.</p>
+<form id="upload_form" enctype="multipart/form-data" method="post">
+	<table><h4>Upload protein sequences in FASTA format only:</h4> <input type="file" name="file1" id="file1"> <br/>Upload Progress : <progress id="progressBar" value="0" max="100" style="width:300px;"></progress> <tr><td>E-value:</td> <td><select name="evalue" id="evalue">
+	<option selected="selected" value="10">10</option>
+	<option value="-20">e-20</option>
+	<option value="-5">e-5</option>
+	<option value="-10">e-10</option>
+	</select></td></tr><tr><td>Percent Alignment:</td> <td><select name="percent" id="percent">
+	<option selected="selected" value="50%">50%</option>
+	<option value="80%">80%</option>
+	<option value="100%">100%</option>
+	<option value="70%">70%</option>
+	</select></td></tr><tr><td>Email:</td> <td><input type="text" name="user_name"  size="50" id="user_name"/></td></tr><tr><td><input type="button" value="Submit Data & Upload" onclick="uploadFile()"></td> <td>&nbsp;</td></tr></table>
+ 
+  <h3 id="status"></h3>
+  <p id="loaded_n_total"></p>
+</form>
+
+<h1>Getting server updates</h1>
+<div id="result"></div>
+
+<script>
+*/
+if(typeof(EventSource) !== "undefined") {
+    var source = new EventSource("server_process.php");
+    source.onmessage = function(event) {
+        document.getElementById("result").innerHTML += event.data + "<br>";
+    };
+} else {
+    document.getElementById("result").innerHTML = "Sorry, your browser does not support server-sent events...";
+}*/
+</script>
+</body>
+</html>

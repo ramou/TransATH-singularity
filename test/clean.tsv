@@ -1,0 +1,6 @@
+Family_TC#	Family_Name	Hit_TCID	Acc.in_TCDB	Hit_TMS#	Substrate_Group	Spec_Substrate	Seq_ID#	Qry_TMS#
+1.A.1	the voltage-gated ion channel (vic) superfamily.	1.A.1.11.17	Q1HHN2	22	Cation	Ca2+	An08g03400	24
+1.A.4	the transient receptor potential ca(2+) channel (trp-cc) family.	1.A.4.9.3	P39719	10	Cation	FAD	An01g09050	9
+1.A.11	the ammonia transporter channel (amt) family.	1.A.11.3.5	Q59UP8	11	Cation	NH4+	An14g02390	11
+2.A.1	the major facilitator superfamily (mfs).	2.A.1.14.38	P40445	12	Unknown	Unknown	An07g00980	10
+3.A.1	the atp-binding cassette (abc) superfamily.	3.A.1.132.3	A0L4L0	0	Unknown	Unknown	An15g06290	1

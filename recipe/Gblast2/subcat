@@ -1,0 +1,468 @@
+TCID	SubGroup	SpecSubstrate
+1.A.1.1.2	Cation	K+
+1.A.1.11.17	Cation	Ca2+
+1.A.1.13.2	Cation	K+
+1.A.1.13.5	Nonselective	Nonselective
+1.A.1.24.3	Cation	K+
+1.A.4.4.1	Cation	Ca2+
+1.A.4.9.3	Cation	FAD
+1.A.8.7.1	Sugar	glycerol
+1.A.8.12.7	H20	H20
+1.A.9.5.2	Anion	Unknown
+1.A.11.1.4	Cation	Ammonia
+1.A.11.2.5	Cation	Ammonium/methyl ammonium
+1.A.11.2.7	Cation	NH4+/CH3NH3+
+1.A.11.3.3	Cation	NH4+
+1.A.11.3.5	Cation	NH4+
+1.A.13.3.1	Anion	Cl-
+1.A.13.4.1	Anion	Cl-
+1.A.14.3.6	Cation	Ca2+
+1.A.17.5.8	Anion	Unknown
+1.A.17.5.9	Anion	Unknown
+1.A.17.6.4	Anion	Unknown
+1.A.22.1.1	Nonselective	slightly cation selective
+1.A.23.1.1	Nonselective	Nonselective
+1.A.23.1.3	Nonselective	Nonselective
+1.A.23.2.1	Nonselective	Nonselective
+1.A.23.4.9	Cation	Ca2+
+1.A.26.1.2	Cation	Mg2+
+1.A.30.1.2	Cation	H+ or Na+
+1.A.30.1.4	Cation	H+ or Na+
+1.A.33.1.3	Cation	Unknown
+1.A.30.2.2	Cation	H+ or Na+
+1.A.30.2.3	Cation	H+ or Na+
+1.A.30.2.4	Cation	H+ or Na+
+1.A.30.2.5	Cation	H+ or Na+
+1.A.30.2.6	Cation	H+ or Na+
+1.A.30.2.7	Cation	H+ or Na+
+1.A.35.3.2	Cation	Mg2+
+1.A.46.2.2	Anion	Unknown
+1.A.56.1.10	Cation	Cu2+
+1.A.77.1.5	Cation	Mg2+,Ca2+
+1.A.77.7.1	Cation	H+
+1.A.81.3.2	Cation	Ca2+
+1.A.88.1.4	Cation	K+
+1.B.9.2.1	Aromatic	Toluene/m-xylene
+1.B.33.1.3	Peptide	Peptide
+1.B.33.1.4	Peptide	Peptide
+1.B.69.1.4	Peptide	Unknown
+1.F.1.1.2	Nonselective	Unknown
+1.H.1.4.1	Cation	Unknown
+1.H.1.4.3	Unknown	Unknown
+1.I.1.1.1	Protein	Unknown
+2.A.1.1.3	Sugar	Xylose:H+ symporter
+2.A.1.1.7	Monocarboxylate	Quinate:H+
+2.A.1.1.10	Sugar	Maltose:H+
+2.A.1.1.11	Sugar	alpha-glucoside:H+
+2.A.1.1.33	Sugar	Fructose:H+
+2.A.1.1.38	Sugar	Glycerol:H+
+2.A.1.1.39	Sugar	Glucose
+2.A.1.1.40	Sugar	Xylose
+2.A.1.1.51	Sugar	Glucose/Xylose
+2.A.1.1.57	Sugar	Monosaccharides
+2.A.1.1.58	Sugar	Glucose:H+
+2.A.1.1.68	Sugar	Glucose
+2.A.1.1.69	Sugar	Sugar
+2.A.1.1.70	Unknown	Unknown
+2.A.1.1.73	Sugar	Glycerol:H+
+2.A.1.1.82	Sugar	cellobiose/cellodextrin
+2.A.1.1.83	Sugar	cellobiose/cellodextrin
+2.A.1.1.96	Unknown	Unknown
+2.A.1.1.110	Sugar	Hexose
+2.A.1.1.117	Sugar	Glucose
+2.A.1.2.16	Amines	Spermine/Spermidine
+2.A.1.2.17	Specific drug	Fluconazole:H+
+2.A.1.2.2	Specific drug	Cycloheximide:H+
+2.A.1.2.23	Sugar	Fructose
+2.A.1.2.27	Siderophores	Alcaligin siderophore
+2.A.1.2.31	Multiple drug	Unknown
+2.A.1.2.33	Cation	histidinol
+2.A.1.2.35	Cation	Unknown
+2.A.1.2.39	Specific drug	Tetracycline
+2.A.1.2.45	Unknown	Unknown
+2.A.1.2.48	Specific drug	Tetracycline
+2.A.1.2.58	Cation	Zn2+
+2.A.1.2.63	Unknown	Unknown
+2.A.1.2.73	Specific drug	Unknown
+2.A.1.2.77	Multiple drug	
+2.A.1.2.78	Multiple drug	
+2.A.1.2.79	Specific drug	cercosporin
+2.A.1.2.85	Multiple drug	Phenylacetate/penoxyacetate
+2.A.1.2.86	Specific drug	Isopenicillin N
+2.A.1.3.15	Specific drug	Tetracycline:H+An01g01900
+2.A.1.3.32	Specific drug	Landomycin A
+2.A.1.3.33	Multiple drug	Tetracycline:H+
+2.A.1.3.52	Cation	NH4+
+2.A.1.3.65	Multiple drug	Unknown
+2.A.1.7.1	Sugar	L-fucose:H+ symporter
+2.A.1.7.13	Unknown	Unknown
+2.A.1.8.5	Anion	Nitrate
+2.A.1.9.1	Inorganic	Phosphate,Mn2+
+2.A.1.9.7	Organoions	Phospholipid
+2.A.1.10.4	Nucleoside	Putative nucleoside transporter
+2.A.1.13.4	Anion	Riboflavin
+2.A.1.13.18	Unknown	Unknown
+2.A.1.13.19	Unknown	Unknown
+2.A.1.14.1	Dicarboxylate	Glucarate
+2.A.1.14.11	Dicarboxylate	Nicotinate
+2.A.1.14.17	Dicarboxylate	Pantothenate:H+
+2.A.1.14.18	Dicarboxylate	Pantothenate:H+
+2.A.1.14.19	Monocarboxylate	vitamin H
+2.A.1.14.36	Unknown	Unknown
+2.A.1.14.38	Unknown	Unknown
+2.A.1.14.4	Dicarboxylate	Allantoate
+2.A.1.14.8	Dicarboxylate	Unknown
+2.A.1.15.9	Monocarboxyl	4-Methylmuconolactone
+2.A.1.16.1	Siderophore	Ferroxamine
+2.A.1.16.6	Siderophore	Siderophore-iron
+2.A.1.16.7	Siderophore	Ferric triacetylfusarinine C
+2.A.1.19.38	Unknown	Unknown
+2.A.1.28.2	Protein	Unknown
+2.A.1.30.1	Other hydrophobic	abietane
+2.A.1.42.2	Lipids	Lysophospholipid
+2.A.1.48.3	Amino acid	Asn,Ile,Lys
+2.A.1.48.4	Amino acid	Asn,Ile,Lys
+2.A.1.58.1	Sugar	N-acetylglucosamine:H+
+2.A.1.58.5	Unknown	Unknown
+2.A.1.70.3	Unknown	Unknown
+2.A.1.75.2	Monocarboxylate	Unknown
+2.A.2.6.1	Sugar	Unknown
+2.A.3.3.17	Unknown	Unknown
+2.A.3.6.1	Amino acid	Cationic amino acid
+2.A.3.8.12	Amino acid	Ser/Thr,aromatic amino acid
+2.A.3.10.10	Amino acid	Arg,His,Lys
+2.A.3.10.13	Amino acid	Unknown
+2.A.3.10.18	Amino acid	Unknown
+2.A.3.10.19	Amino acid	Polyamine/Carnitine
+2.A.3.10.21	Amino acid	Arg, Lys
+2.A.3.10.23	Amino acid	Arg,Leu,Met,Phe
+2.A.3.10.24	Amino acid	Unknown
+2.A.3.10.28	Amino acid	Arg,Lys
+2.A.3.10.4	Amino acid	Arg
+2.A.3.4.1	Amino acid	Choline
+2.A.3.4.2	Amino acid	GABA
+2.A.3.4.3	Amino acid	GABA
+2.A.3.4.6	Amino acid	Thiamin
+2.A.3.4.7	Amino acid	Unknown
+2.A.3.8.16	Amino acid	Met
+2.A.3.8.19	Amino acid	Cys
+2.A.3.8.4	Amino acid	Met
+2.A.4.1.3	Cation	Cd+ or Zn2+:H+ + K+ antiporter
+2.A.4.2.2	Cation	Zn2+, Co2+
+2.A.4.5.1	Cation	Mn2+
+2.A.5.1.1	Cation	Zn2+
+2.A.5.4.11	Cation	Zn2+ and Cd2+ uptake
+2.A.5.5.2	Cation	Zn2+
+2.A.5.7.1	Cation	Divalent heavy-metal cation
+2.A.6.1.2	Cation	Co2+;Zn2+;Cd2+
+2.A.6.1.5	Zn2+,Cd2+,Pb2+
+2.A.6.2.6	Multiple drugs	beta-lactams, fluoroquinolones,tetracycline,macrolides,chloramphenicol,biocides, and a toxic indole compound
+2.A.6.2.15	Multiple drugs	beta-lactams, fluoroquinolones,tetracycline,macrolides,chloramphenicol,biocides,including levofloxacin,carbenicillin,aztreonam,ceftazidime, cefepime, cefoperazone,piperacillin,erythromycin,azithromyein,chloramphenicol
+2.A.6.2.16	Multiple drug	Luoroquinolones,chloramphenicol,biocides,xenobiotics and chloramphenicol
+2.A.6.2.25	Cation	Au2+
+2.A.6.2.27	Specific drug	Triclosan
+2.A.6.2.30	Multiple drug	Antimicrobials
+2.A.6.2.37	Multiple drug	Multidrug
+2.A.6.2.39	Multiple drug	Aztreonam,macrolides,novobiocin and tetracycline
+2.A.6.3.1	Polysaccharide	Lipooligosaccharide
+2.A.6.4.2	Protein	Pre-protein
+2.A.6.5.1	Specific drug	Actinorhodin
+2.A.6.6.3	Lipid	Sphingolipid
+2.A.6.7.1	Unknown	Unknown
+2.A.7.1.4	Multiple drug	Cetylpyridinium,cetyldimethyl ethylammonium,hexadecyltrimethyl ammonium
+2.A.7.2.1	Unknown	Unknown
+2.A.7.7.2	Multiple drug	Antibiotic
+2.A.7.10.1	Sugar	UDP-N-acetylglucosamine
+2.A.7.11.6	Sugar	UDP-glucose/UDP-galactose
+2.A.7.13.2	Nucleotide	GDP-mannose
+2.A.7.9.17	Polysaccharides	Unknown
+2.A.7.21.4	Nucleobase	Orotate
+2.A.7.23.1	Amino acid	Tryptophan
+2.A.7.24.11	Unknown	Unknown
+2.A.7.24.5	Unknown	Unknown
+2.A.8.1.2	Monocarboxyl	L-Idonate/D-gluconate:H+ symporter
+2.A.8.1.7	Monocarboxyl	Gluconate:H+ symporter
+2.A.9.3.1	Protein	Protein
+2.A.12.4.1	Nucleotide	NAD+:ADP antiporter
+2.A.14.2.1	Unknown	Unknown	
+2.A.16.2.1	Dicarbonate	Malate,Succinate
+2.A.16.4.1	Unknown	Unknown
+2.A.16.4.2	Unknown	Unknown
+2.A.17.2.1	Peptide	Unknown
+2.A.17.2.2	Peptide	dipeptide,tripeptide
+2.A.17.4.4	Peptide	Peptide
+2.A.18.4.1	Amino acid	Unknown
+2.A.18.4.2	Amino acid	Unknown
+2.A.18.5.2	Amino acid	Gln,Ile,Tyr
+2.A.18.7.3	Amino acid	Unknown
+2.A.19.2.2	Cation	Ca2+,K+
+2.A.19.2.4	Cation	Ca2+,Mn2+
+2.A.19.2.8	Cation	Ca2+,K+
+2.A.19.4.6	Cation	Na+/Ca+ antiporter Sodium/potassium/calcium
+2.A.19.5.2	Cation	Cation proton antiporter	
+2.A.20.2.1	Inorganic	Phosphate
+2.A.21.2.2	Amino acid	Sodium/proline symporter
+2.A.21.3.7	Sugar	Sialic acid
+2.A.21.3.8	Sugar	Mannose
+2.A.21.3.9	Sugar	Galactose
+2.A.21.6.1	Amines	Urea,polyamines
+2.A.21.7.2	Monocarboxyl	Acetate/glyoxalate
+2.A.21.8.1	Amines	Choline:Na+ symporter
+2.A.23.2.10	Amino acid	Amino acid
+2.A.25.1.3	Amino acid	Alanine:Na+ symporter
+2.A.27.2.1	Amino acid	Glutamate:sodium
+2.A.29.10.2	Specific drug	Folic acid
+2.A.29.10.4	Nucleotide	Pyrimidine
+2.A.29.10.5	Nucleotide	NAD+, pyruvate
+2.A.29.13.1	Dicarboxylate	Succinate, fumerate
+2.A.29.14.2	Dicarboxylate	Asp, Glu
+2.A.29.16.1	Nucleotide	NDP
+2.A.29.17.1	Nucleotide	ATP
+2.A.29.1.7	Nucleotide	ATP:ADP antiporter
+2.A.29.2.10	Dicarboxylate	alpha-ketogluterate
+2.A.29.21.1	Nucleotide	Guanine
+2.A.29.23.2	Nucleotide	ATP:ADP antiporter
+2.A.29.2.3	Dicarboxylate	Unknown
+2.A.29.2.5	Dicarboxylate	Unknown
+2.A.29.29.1	Dicarboxylate	Tricarboxylates
+2.A.29.4.3	Inorganic	phosphate
+2.A.29.4.4	Inorganic	phosphate
+2.A.29.4.6	Inorganic	phosphate
+2.A.29.5.1	Cation	Fe2+
+2.A.29.5.6	Amino acid	Unknown
+2.A.29.7.3	Dicarboxylate	Tricarboxylate
+2.A.29.8.12	Organic acid	Unknown
+2.A.29.8.4	Cation	Carnitine
+2.A.29.8.5	Amino acid	Acyl carnitine
+2.A.29.9.1	Amino acid	Unknown
+2.A.31.3.2	Anion	Borate
+2.A.33.1.2	Cation	Na+,K+,H+ symporter
+2.A.35.2.1	Cation	Na+/H+ antiporter
+2.A.36.2.1	Cation	Na+/H+ exchanger
+2.A.36.4.4	Cation	Na+,K+,Li+ and Rb+ (alkali metals)
+2.A.36.6.3	Cation	K+:H+ antiporter
+2.A.36.6.4	Cation	K+(NH4+):H+ antiporter
+2.A.38.1.3	Cation	K+		
+2.A.39.2.4	Nucleobase	Purine
+2.A.39.3.1	Nucleobase	Allantoin
+2.A.39.3.7	Nucleobase	Uracil:cation
+2.A.39.5.1	Sugar	Mannitol
+2.A.40.4.1	Nucleobase	Urate, xanthine
+2.A.40.4.4	Nucleobase	Purine
+2.A.40.7.1	Nucleobase	Purine
+2.A.41.2.5	Nucleoside	Nucleoside:Na+ cotransporter
+2.A.41.2.7	Nucleoside	Unknown
+2.A.43.4.1	Amino acid	Unknown
+2.A.45.2.2	Anion	Arsenite and/or antimonite
+2.A.47.1.1	Anion	Anion
+2.A.47.2.2	Anion	Phosphate
+2.A.47.4.5	Anion	Na+:SO4 symporter
+2.A.49.2.3	Anion	sCl- 
+2.A.49.6.1	Anion	Cl-
+2.A.50.2.1	Substrate cofactor	Activated alanine
+2.A.52.1.8	Cation	Ni2+
+2.A.52.2.4	Cation	Nickel/cobalt
+2.A.53.1.2	Anion	sulphate
+2.A.53.1.11	Anion	sulphate
+2.A.53.3.1	Anion	Sulfate
+2.A.53.3.8	Anion	Bicarbonate uptake
+2.A.55.1.4	Cation	Mn2+
+2.A.55.3.1	Cation	Mn2+,Fe2+,Cd2+,Co2+,Zn2+,Ni2+:H+ symporter
+2.A.5.3.4	Cation	Metal ion
+2.A.57.5.3	Nucleoside	Arg
+2.A.58.2.1	Anion	Unknown (maybe phosphate)
+2.A.59.1.2	Anion	Unknown
+2.A.59.1.5	Anion	Arsenite
+2.A.63.1.2	Cation	Na+:H+ antiporter
+2.A.63.1.4	Cation	Na+:H+ antiporter
+2.A.64.2.1	Protein	Protein
+2.A.64.3.1	Protein	Protein
+2.A.64.3.2	Protein	Protein
+2.A.66.1.5	Specific drug	Unknown
+2.A.66.1.9	Multiple drug	Norfloxacin, polymyxin B
+2.A.66.1.12	Multiple drug	Benzalkonium chloride, fluoroquinolone, ethidium bromide,acriflavin,tetraphenylphosphonium chloride
+2.A.66.2.4	Polysaccharide	Acetan
+2.A.66.3.1	Lipid	Unknown
+2.A.66.5.3	Polysaccharide	Polysaccharide
+2.A.66.7.1	Lipid	Lipid
+2.A.67.1.1	Peptide	Unknown
+2.A.67.1.5	Peptide	Glutathione
+2.A.67.1.5	Peptide	Glutathione
+2.A.67.1.6	Peptide	Unknown
+2.A.69.2.3	Unknown	Unknown
+2.A.69.4.5	Dicarbonate	Malate
+2.A.72.3.2	Cation	K+
+2.A.79.1.2	Amino acid	Threonine/serine
+2.A.81.1.2	Cation	Cobalt
+2.A.85.3.5	Unknown	Unknown
+2.A.86.1.1	Organoanion	Autoinducer-2 furanosyl borate diester
+2.A.86.1.2	Organoanion	Autoinducer-2
+2.A.86.2.3	Organoanion	Autoinducer-2
+2.A.93.1.6	Unknown	Unknown
+2.A.93.1.7	Protein	Unknown
+2.A.96.1.3	Anion	Acetate
+2.A.98.1.4	Anion	Sulfate
+2.A.100.1.3	Cation	Fe2+
+2.A.102.4.2	Organoanion	Organo-sulfur-containing compound
+2.A.105.1.1	Monocarboxylates Pyruvate	An04g02140
+2.A.108.1.1	Cation	Unknown
+2.A.108.1.2	Cation	Fe2+
+2.A.108.1.3	Cation	Fe2+
+2.A.108.1.4	Cation	Unknown
+3.A.1.2.13	Organoanion	Autoinducer-2
+3.A.1.2.15	Sugar	Xylitol
+3.A.1.5.22	Peptide	Peptide
+3.A.1.7.1	Anion	Phosphate
+3.A.1.10.1	Cation	Fe3+
+3.A.1.15.6	Cation	Cu2+,Zn2+,Fe2+
+3.A.1.15.8	Cation	Mn2+,Zn2+,Fe2+
+3.A.1.16.2	Anion	Bispecific cyanate/nitrite
+3.A.1.17.6	Nucleobases	Hydroxymethylpyrimidine,N-formyl-4-amino-5-(aminomethyl)-2-methylpyrimidine
+3.A.1.27.3	Lipid	Lipid
+3.A.1.105.3	Multiple drug	Dideacetyl-chromomycin,chromomycin and mithramycin
+3.A.1.106.2	Multiple drug	Doxorubicin,verapamil,ethidium,tetraphenylphosphonium,vinblastine and a fluorescent dye
+3.A.1.106.8	Multiple drug	Multiple drug
+3.A.1.109.4	Protein	Protein
+3.A.1.113.1	Peptide	Peptide
+3.A.1.114.1	Lipid	Glycolipid
+3.A.1.115.1	Cation	Na+
+3.A.1.117.1	Multiple drug	Multidrug
+3.A.1.122.1	Multiple drug	14-and15-membered lactone macrolides including erythromycin,heat-stable enterotoxin II,L-cysteine
+3.A.1.122.2	Peptide	Antimicrobial peptide
+3.A.1.122.7	Multiple drug	Macrolide
+3.A.1.122.8	Multiple drug	Macrolide
+3.A.1.125.1	Protein	Lipoprotein
+3.A.1.125.2	Protein	Lipoprotein
+3.A.1.125.3	Protein	Lipoprotein
+3.A.1.132.1	Polysaccharide	Exopolysaccharide
+3.A.1.132.4	Unknown	Unknown
+3.A.1.141.1	Multiple drug	Ethyl viologen
+3.A.1.141.2	Unknown	Unknown
+3.A.1.201.10	Multiple drug	Unknown
+3.A.1.203.7	Lipid	Unknown
+3.A.1.204.8	Lipid	Fatty acid
+3.A.1.204.9	Multiple drug	Unknown
+3.A.1.205.4	Multiple drug	Unknown
+3.A.1.205.5	Multiple drug	Phospholipid
+3.A.1.205.7	Multiple drug	Unknown
+3.A.1.206.1	Peptide	Unknown
+3.A.1.208.11	Peptide	Bilirubin
+3.A.1.208.12	Specific drug	Bile acid
+3.A.1.208.12	Specific drug	Bile acid
+3.A.1.208.2	Multiple drug	Organic anion
+3.A.1.208.32	Unknown	Unknown
+3.A.1.208.8	Anion	Unknown
+3.A.1.210.1	Cation	Unknown
+3.A.1.210.2	Cation	Glutathione
+3.A.2.1.2	Cation	Na+
+3.A.2.1.3	Cation	H+
+3.A.3.1.7	Cation	Unknown
+3.A.3.2.27	Cation	Ca2
+3.A.3.2.6	Cation	Ca2+
+3.A.3.2.7	Cation	Ca2+
+3.A.3.3.1	Cation	H+
+3.A.3.3.6	Cation	H+
+3.A.3.5.4	Cation	Ag+
+3.A.3.5.8	Cation	Cu
+3.A.3.5.9	Cation	Unknown
+3.A.3.8.2	Lipid	Phospholipid
+3.A.3.8.4	Lipid	Phospholipid
+3.A.3.8.9	Lipid	Phospholipid
+3.A.3.9.5	Cation	Unknown
+3.A.3.25.2	Cation	Cation
+3.A.3.27.3	Cation	Cation,heavy-metal
+3.A.5.2.2	Protein	Protein
+3.A.5.8.1	Protein	Peptide
+3.A.5.9.1	Protein	Protein
+3.A.6.1.1	Protein	Flagellar protein
+3.A.7.15.1	Protein	Fimbrium (pilus) subunit
+3.A.8.1.1	Protein	Protein
+3.A.11.1.1	Nucleic acid	DNA
+3.A.11.1.3	Nucleic acid	DNA
+3.A.12.1.1	Nucleic acid	DNA
+3.A.15.1.1	Protein	Protein
+3.A.15.2.1	Protein	Fimbrium (pilus) subunit
+3.A.15.3.1	Protein	Fimbrium (pilus) subunit
+3.A.16.1.2	Protein	Protein
+3.A.19.1.2	Protein	Protein
+3.A.20.1.5	Protein	Protein
+3.A.23.2.1	Protein	Protein
+3.B.1.1.2	Cation	Na+
+3.B.1.1.5	Cation	Na+
+3.D.1.4.1	Cation	H+
+3.D.1.6.2	Cation	H+
+3.D.1.8.1	Cation	H+
+3.D.2.2.1	Cation	H+
+3.D.2.3.1	Cation	Unknown
+3.D.3.2.1	Electron	Unknown
+3.D.3.3.1	Electron	Unknown
+3.D.4.3.2	Cation	H+
+3.D.4.3.3	Cation	H+
+3.D.4.4.1	Cation	H+
+3.D.4.4.2	Cation	H+
+3.D.4.4.3	Cation	H+
+3.D.4.6.2	Cation	H+
+3.D.5.1.1	Cation	Na+
+3.D.10.1.1	Dicarboxylate	Unknown
+3.E.1.5.1	Protein	Unknown
+4.C.1.1.4	Lipid	fatty acid
+4.C.1.1.5	Lipid	ligase
+4.C.1.1.7	Lipid	Ligase 2
+4.D.1.1.3	Sugar	UDP-N-acetylglucosamine
+4.D.2.1.6	Polysaccharide	Polysaccharide
+5.A.1.5.1	Electron	Electron
+5.A.1.6.1	Electron	Electron
+5.A.3.3.3	Electron	Electron
+5.A.3.4.1	Electron	Electron
+5.A.4.1.1	Electron	Electron
+5.B.1.1.1	Electron	Electron
+5.B.1.5.1	Cation	Fe3+,Cu2+ reductase
+8.A.1.1.3	Unknown	Unknown
+8.A.1.6.2	Unknown	Unknown
+8.A.3.1.1	Unknown	Unknown
+8.A.3.3.3	Unknown	Unknown
+8.A.21.2.1	Unknown	Unknown
+8.A.27.1.2	Lipid	Unknown
+8.A.41.1.4	Cation	Unknown
+9.A.2.1.1	Protein	Protein
+9.A.2.1.3	Protein	Protein
+9.A.6.1.1	Nucleotide	ATP
+9.A.8.1.6	Cation	ion,Fe2+
+9.A.9.1.1	Cation	Fe2+,Cu2+
+9.A.24.1.1	Lipid	Cholesterol
+9.A.26.1.1	Lipid	Unknown
+9.A.26.1.3	Lipid	Heme
+9.A.31.1.1	Peptide	Peptide(toxic)
+9.A.40.2.1	Cation	Fe2+
+9.A.40.3.4	Cation	Metal ion
+9.A.45.1.3	Cation	Mg2+
+9.A.47.1.1	Protein	Protein(pili,fimbrae)
+9.A.54.1.3	Protein	cobalamin
+9.B.1.1.3	Peptide	Unknown
+9.B.1.2.2	Peptide	Unknown
+9.B.7.2.3	Protein	Unknown
+9.B.14.3.1	Cofactor	Heme
+9.B.18.1.1	Protein	Protein
+9.B.20.2.2	Cation	Mg2+
+9.B.25.1.1	Nucleotide	Unknown
+9.B.26.1.4	Unknown	Unknown
+9.B.27.1.1	Anion	Anion
+9.B.27.1.2	Anion	Anion
+9.B.27.1.5	Anion	Anion
+9.B.28.1.1	Amine	Ethanolamine
+9.B.30.1.1	Unknown	Unknown
+9.B.32.1.2	Unknown	Unknown
+9.B.45.1.2	Unknown	Unknown
+9.B.59.1.3	Peptide	Peptide
+9.B.82.1.2	Unknown	Unknown
+9.B.97.4.1	Unknown	Unknown
+9.B.98.1.3	Unknown	Unknown
+9.B.104.1.2	Peptide	Peptide
+9.B.104.1.3	Peptide	Peptide
+9.B.105.1.1	Cation	Pb2+
+9.B.119.1.1	Sugar	Unknown
+9.B.126.2.1	Lipid	Lipid
+9.B.128.2.1	lipid	Lipid
+9.B.132.1.1	Lipid	Unknown
+9.B.142.3.5	Sugar	Unknown
+9.B.143.5.1	Unknown	Unknown

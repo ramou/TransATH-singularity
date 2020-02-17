@@ -1,0 +1,33 @@
+/* Add here all your css styles (customizations) */
+.breadcrumbs {
+    background: #3498db;
+    border-bottom-color: #1049B9;
+}
+
+.breadcrumbs h1 {
+    color: #FFFFFF;
+    font-size: 22px;
+    margin-top: 8px;
+}
+
+.breadcrumb a {
+    color: #FFFFFF;
+}
+
+.breadcrumb li.active, .breadcrumb li a:hover {
+    color: #FFFFFF;
+}
+
+.footer-v1 .copyright {
+    background: #3498db;
+    border-top: none;
+    padding: 10px 0 5px;
+}
+
+.sky-form {
+    margin: 0;
+    outline: none;
+    box-shadow: 0 0 20px rgba(0,0,0,.3);
+    font: 17px/1.55 'Open Sans', Helvetica, Arial, sans-serif;
+    color: #666;
+}
