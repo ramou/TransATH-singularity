@@ -190,6 +190,6 @@ print "blast.out is just the BLAST output\n";
 print "Sequences with 'No hits to TCDB' are saved in ",$no_hits,"\n";
 
 chdir($curdir);
-dircopy($workpath . $email .'result', $curdir . "/" . $email );
+dircopy($workpath . $email .'result', $curdir . "/" . $ARGV[1] );
 
 exit 0;
