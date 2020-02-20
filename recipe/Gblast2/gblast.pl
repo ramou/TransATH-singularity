@@ -2,28 +2,25 @@
 
 use Bio::SearchIO;
 use File::Copy;
-use File::Copy::Recursive qw(dircopy);
 
+chomp(my $curdir = `pwd`);
+my $targetOutDir = $curdir . "/" .  $ARGV[1] . "/";
+mkdir $targetOutDir;
 my $workpath = "/var/www/html/Gblast2/";
 my $term = $/;
 my $qfile = $ARGV[0];
-my $email = "uploads/".$ARGV[1]."/";
 my $percent = $ARGV[2];
 my $evalue = $ARGV[3];
 my $sfile = $workpath . 'db/tcdb';
 my $cfile = $workpath . 'subcat';
-my $blst = $workpath . $email .'result/blast.out';
-$hitsout = $workpath . $email .'result/hits.out';
-
-chomp(my $curdir = `pwd`);
-chdir($workpath);
+my $blst = $targetOutDir . 'blast.out';
+$hitsout = $targetOutDir. 'hits.out';
 
 our ($id, $sequence, $line, $qry_tms, $pfam_url);
 our %qhash=();
 our %shash=();
 our (@all_qry_hits, @all_qry, @all_subj, @sequencelines);
 
-copy($curdir . "/" . $qfile, $workpath . $qfile);
 open(QFASTA,"<",$qfile) or die("Open failed: $!");
 $/ = ">";
 
@@ -68,7 +65,7 @@ system("blastp -db $sfile -query $qfile -evalue $evalue -out $blst");
 
 print "Now parsing and stuff... (this might take a while)\n";
 # read blast output file
-my $blast_report = new Bio::SearchIO ('-format' => 'blast', '-file' => $workpath . $email . 'result/blast.out', -best_hit_only =>'true'); #-signif => '1e-5'
+my $blast_report = new Bio::SearchIO ('-format' => 'blast', '-file' => $targetOutDir . 'blast.out', -best_hit_only =>'true'); #-signif => '1e-5'
 
 open (HITSOUT, ">$hitsout") or die "couldn't open $hitsout, $!\n";
 print HITSOUT "Query\tHit\tTCID\tQry_TMS\tHit_TMS\tPer_Diff\tPer_identity.\tQcov\tScov\tE-value\tScore\tSub_group\tSpec_subs\n";
@@ -117,7 +114,7 @@ while( my $result = $blast_report->next_result) {
 				
 				#get the query sequence and save it in a temp file
 				$qry_seq = '>'.$qry."|".$qry_desc."\n".$qhash{$qry};
-				$temp_query = $email.'result/temp_qry_faa';
+				$temp_query = $targetOutDir . 'temp_qry_faa';
 				open (QTEMP, ">$temp_query") or die "couldn't open $temp_query, $!\n";
 				print QTEMP $qry_seq;
 				
@@ -125,7 +122,7 @@ while( my $result = $blast_report->next_result) {
 				
 				#get the subject sequence and save it in a temp file
 				$subj_seq = '>'.$hitdescs."\n".$shash{$tc_acc};
-				$temp_subject = $email.'result/temp_subj_faa';
+				$temp_subject = $targetOutDir . 'temp_subj_faa';
 				open (STEMP, ">$temp_subject") or die "couldn't open $temp_query, $!\n";
 				print STEMP $subj_seq;
 				
@@ -148,7 +145,7 @@ while( my $result = $blast_report->next_result) {
 								# print query info, hit info, HSP info
 				print HITSOUT
 					$qry,"\t",$hit->accession,"\t",$tcid,"\t", 
-					topology($email."result/temp_qry_faa"),"\t",topology($email."result/temp_subj_faa"),"\t", $Diff,"\t",
+					topology($targetOutDir . "temp_qry_faa"),"\t",topology($targetOutDir . "temp_subj_faa"),"\t", $Diff,"\t",
 					$percent,"%\t",$Qcov,"\t",$Scov,"\t",  $hsp->evalue(),"\t",$hsp->score(),"\t",$subg,"\t",$subs,"\n";
 					
 					#topology("result/temp_qry_faa"),
@@ -166,7 +163,7 @@ while( my $result = $blast_report->next_result) {
 	}
 #}
 
-$no_hits = $workpath . $email . 'result/no_hits.out';
+$no_hits = $targetOutDir . 'no_hits.out';
 open (NOHITS, ">$no_hits") or die "couldn't open $no_hits, $!\n";
 
 map $count{$_}++ , @all_qry, @all_qry_hits;
@@ -178,18 +175,15 @@ foreach $nohit (@nohits) {
 	print NOHITS '>'.$nohit."\n".$sequence,"\n";
 }
 
-$cmd = $workpath . 'gblast2.php' .' '. $evalue . ' ' . $email;
-$cleanfile = $workpath . $email .'./result/clean.tsv';
+$cmd = $workpath . 'gblast2.php' .' '. $evalue . ' ' . $targetOutDir;
+$cleanfile = $targetOutDir .'clean.tsv';
 system("$cmd $hitsout $qfile $cleanfile");
 
-unlink ($workpath . $email ."result/temp_subj_faa");
-unlink ($workpath . $email . "result/temp_qry_faa");
+unlink ($targetOutDir . "temp_subj_faa");
+unlink ($targetOutDir . "temp_qry_faa");
 print "\n******* All Done! *******\n";
 print "The result is in: result/clean.tsv\n";
 print "blast.out is just the BLAST output\n";
 print "Sequences with 'No hits to TCDB' are saved in ",$no_hits,"\n";
-
-chdir($curdir);
-dircopy($workpath . $email .'result', $curdir . "/" . $ARGV[1] );
 
 exit 0;

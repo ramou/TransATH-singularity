@@ -14,7 +14,7 @@ require('upe.function.php');
 Class Genome
 {
 
-	//var $file='result/hits.out';
+	//var $file='hits.out';
 	var $file;
 	var $data;
 	var $tc_families;
@@ -26,7 +26,7 @@ Class Genome
 	{
 		//$this->file=getpath();
 		global $argv;
-		$this->file = $argv[2].'result/hits.out';
+		$this->file = $argv[2].'hits.out';
 		$this->genomefile=$genome;
 		$this->load_data();
 		$this->load_tcdb_families();
