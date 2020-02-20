@@ -11,6 +11,7 @@ export HMMTOP_PSV=/var/www/html/Gblast2/hmmtop.psv
 export PATH=/var/www/html/Gblast2:$PATH
 
 %post
+        CPAN_INSTALL_FLAG=-T
 	export DEBIAN_FRONTEND=noninteractive
 	apt-get update
 	apt-get -qqq update
@@ -33,35 +34,39 @@ export PATH=/var/www/html/Gblast2:$PATH
 	dpkg-reconfigure locales
 	
 	echo | cpan
-	cpan File::Copy::Recursive
-	cpan Test::Needs
-	cpan List::MoreUtils
-	cpan URI
-	cpan IO::HTML
-	cpan IO::String
-	cpan HTTP::Headers
-	cpan HTML::Entities
-	cpan CGI
-	cpan XML::Parser
-	cpan XML::Parser::PerlSAX
-	cpan XML::DOM
-	cpan XML::DOM::XPath
-	cpan Data::Stag
-	cpan XML::Simple
-	cpan XML::Compile::SOAP11
-	cpan XML::Compile::WSDL11
-	cpan XML::Twig
-	cpan File::Which
-	cpan HTML::Template
-	cpan HTML::TreeBuilder
-	cpan JSON
-	cpan Log::Log4perl
-	cpan Math::CDF
-	cpan Bio::SearchIO
+	cpan $CPAN_INSTALL_FLAG File::Copy::Recursive
+	cpan $CPAN_INSTALL_FLAG Test::Needs
+	cpan $CPAN_INSTALL_FLAG List::MoreUtils
+	cpan $CPAN_INSTALL_FLAG URI
+	cpan $CPAN_INSTALL_FLAG IO::HTML
+	cpan $CPAN_INSTALL_FLAG IO::String
+	cpan $CPAN_INSTALL_FLAG HTTP::Headers
+	cpan $CPAN_INSTALL_FLAG HTML::Entities
+	cpan $CPAN_INSTALL_FLAG CGI
+	cpan $CPAN_INSTALL_FLAG XML::Parser
+	cpan $CPAN_INSTALL_FLAG XML::Parser::PerlSAX
+	cpan $CPAN_INSTALL_FLAG XML::DOM
+	cpan $CPAN_INSTALL_FLAG XML::DOM::XPath
+	cpan $CPAN_INSTALL_FLAG Data::Stag
+	cpan $CPAN_INSTALL_FLAG XML::Simple
+	cpan $CPAN_INSTALL_FLAG XML::Compile::SOAP11
+	cpan $CPAN_INSTALL_FLAG XML::Compile::WSDL11
+	cpan $CPAN_INSTALL_FLAG XML::Twig
+	cpan $CPAN_INSTALL_FLAG File::Which
+	cpan $CPAN_INSTALL_FLAG HTML::Template
+	cpan $CPAN_INSTALL_FLAG HTML::TreeBuilder
+	cpan $CPAN_INSTALL_FLAG JSON
+	cpan $CPAN_INSTALL_FLAG Log::Log4perl
+	cpan $CPAN_INSTALL_FLAG Math::CDF
+	cpan $CPAN_INSTALL_FLAG Bio::SearchIO
 	apt-get -y install alien
 	curl -s ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/2.2.26/ncbi-blast-2.2.26+-3.x86_64.rpm --output ncbi-blast-2.2.26+-3.x86_64.rpm
 	alien -i ncbi-blast-2.2.26+-3.x86_64.rpm
 	cp -R Gblast2 /var/www/html/
 	mkdir -p /var/www/html/Gblast2/uploads/out/result
 	chmod 777 /var/www/html/Gblast2/uploads/out/result
+	chmod 755 /var/www/html/Gblast2/gblast.pl
+	chmod 755 /var/www/html/Gblast2/gblast2.php
+	chmod 755 /var/www/html/Gblast2/hmmtop
+	chmod 777 /var/www/html/Gblast2
 	rm -rf /var/lib/apt/lists/*
