@@ -1,7 +1,17 @@
 # TransATH-singularity
 A command-line version of Faizah Aplop's TransATH tool.
 
-I'm building it with 
-`singularity build --sandbox /root/TransATH-sing/ Singularity`
+I'm grabbing it with
+````bash
+git clone https://github.com/ramou/TransATH-singularity.git
+````
+
+Then I build it with 
+````bash
+cd TransATH-singularity/recipe
+singularity build --sandbox /root/TransATH-sing/ Singularity
+````
 followed by
-`singularity build TransATH.simg /root/TransATH-sing/`
+````bash
+singularity build /root/TransATH.simg /root/TransATH-sing/
+````
